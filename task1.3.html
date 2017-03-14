@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>css布局</title>
+<style type="text/css">
+* {
+    margin:20;
+	padding:20;
+}
+.c {
+    clear: both; 
+	}  
+
+#mainbody {
+	    background:#eee;
+		margin:0 auto;
+		width:90%;
+		border:2px solid #999;
+		overflow: hidden;
+}
+.left {
+	width:200px;
+	height:100px;
+    border:2px solid #999;
+    background-color: #fff;
+    margin:20px ;
+    float:left; 
+}
+.team-logo{
+	margin: 10px 20px;
+	vertical-align: middle;
+}
+.team-name{
+	display: inline;
+
+}
+
+.center{	
+	margin:20px 160px 20px 240px;
+	height:500px;
+	border:2px solid #999;
+	background-color: #fff;
+	padding: 20px;
+}
+.center p{text-indent: 2em;line-height:2;}
+.right {
+width:120px;
+height:600px;
+float:right;
+border:2px solid #999;
+background-color: #fff;
+margin:20px ;
+}
+.team-member{
+	margin: 20px;
+	float: left;
+}
+.member-name{
+	font-size: 14px;
+	font-family: "宋体";
+	text-align: center;	
+}
+</style>
+</head>
+
+<body>
+<div id="mainbody">
+    <div class="left">
+    	<img src="images/MUFC-logo.jpg" class="team-logo" width="80" height="80"/>
+		<div class="team-name">MUFC</div>
+    </div>
+    <div class="right">
+    	<img src="images/coach.jpg" class="team-member" width="80" height="80"/>
+    	<div class="member-name">教练穆里尼奥</div>
+    	<img src="images/forward.jpg" class="team-member" width="80" height="80"/>
+    	<div class="member-name">前锋马夏尔</div>
+    	<img src="images/goalkeeper.jpg" class="team-member" width="80" height="80"/>
+    	<div class="member-name">门将德赫亚</div>
+    	<img src="images/shortloin.jpg" class="team-member" width="80" height="80"/>
+    	<div class="member-name">前腰马塔</div>
+    </div>
+    <div class="center">
+    	<h3>曼彻斯特联足球俱乐部</h3>
+    	<p>曼彻斯特联足球俱乐部位于英国英格兰西北区曼彻斯特郡曼彻斯特市英文名Manchester United Football Club，简称ManUtd或MUFC，中文简称曼联，其前身“牛顿·希斯”于1878年由兰开夏郡和约克郡铁路公司的工人在牛顿希斯工地上成立。1902年球队改组并改名曼联，现为英格兰足球超级联赛俱乐部，曼联的球队主场为“梦剧场”老特拉福德球场，1910年启用至今。</p>
+		<p>曼联是英格兰足球史上最为成功的俱乐部之一，也是欧洲乃至世界最具有影响力最成功的的球队之一，共获得20次英格兰顶级联赛冠军，12次英格兰足总杯冠军，5次英格兰联赛杯冠军（除英格兰联赛杯外均为最高纪录）。在欧洲赛场上，曼联共获得3次欧洲冠军联赛冠军，1次欧洲优胜者杯和1次欧洲超级杯冠军。</p>
+		<p>2016年5月27日，曼联官方宣布葡萄牙主教练何塞·穆里尼奥将入主老特拉福德，他将成为弗格森爵士退休后曼联所任命的第三任主教练。</p>
+    </div>
+</div>
+</body>
+</html>
