@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>div水平垂直居中</title>
+<style type="text/css">
+* {
+    margin:20;
+	padding:20;
+  }
+.c {
+    clear: both; 
+	}  
+
+#mainbody {
+	    background:#ccc;
+		margin:auto;
+		width:400px;
+		height: 200px;
+		position: absolute;  
+  		top: 0; 
+  		left: 0;
+  		bottom: 0;
+  		right: 0;
+  		/*overflow:auto;  */
+		overflow: hidden;
+}
+.circle{
+		width:100px;
+  		height:100px;
+  		background:#fc0;
+  		border-radius:50%;
+}
+#left{
+		top: 50%;
+   		left: 50%;
+    	transform: translate(-50%,-50%);
+		/*top:-50px;
+		left:-50px;*/
+}
+#right{
+		position: relative;
+		bottom: -50px;
+     	right: -50px;
+     	transform: translate(300px,0px);
+}
+
+</style>
+</head>
+
+<body>
+<div id="mainbody">
+	<div id="left" class="circle"></div>
+	<div id="right"  class="circle"></div>
+</div>
+</body>
+</html>
