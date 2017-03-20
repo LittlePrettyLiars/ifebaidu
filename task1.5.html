@@ -1,0 +1,370 @@
+<!Doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- <link href="task1.5.css" rel="stylesheet" type="text/css" /> -->
+<style  type="text/css">
+*{
+ 	margin:0;
+ 	padding:0;
+ }
+ body{
+ 	height:100%;
+ 	width:80%;
+ 	margin:0 auto;
+ 	background-color: black;
+ 	font-family:Arial,Helvetica,sans-serif;
+	font-size: 18px;
+	line-height: 1.5em;
+ }
+#header{
+    height:100px;
+    background:#f5f5f5;
+    padding: 0 50px;
+}
+#footer{
+	width:100%;
+	text-align: center;
+	color:white;
+}
+ul{
+	list-style: none;
+}
+#header img{
+	display:inline-block;
+	margin-top:10px;
+	background-color: #696969;
+}
+#header ul{
+	float:right;
+	padding-right: 20px;
+}
+#header ul li{
+	line-height:60px;
+	float:left;
+	color:#fff;
+	font-weight: bold;
+	padding-left:10px;
+}
+/*#header>ul>li:last-child{
+	color:#A2ADAF;
+}*/
+#main{
+	background-color: #DDDDDD;
+}
+.left{
+	margin-right:380px; 
+	background: #00f;
+	border-width: 10px 5px 5px 10px;
+}
+.right{
+	position: absolute;
+	right:10%;
+	top:100px; 
+	width: 380px;
+	background: #ff0;
+	border-width: 10px 10px 10px 5px;
+}
+.article{ 
+	/*border-style: solid;
+	border-color:#DDDDDD;
+	border-width: 10px;*/
+	border: solid #DDDDDD 10px;
+	padding:20px;
+	background-color: #FFFFFF;
+	padding-top: 20px;
+}
+h2{
+	font-size: 25px;
+	line-height:50px;
+}
+h3{
+	font-size: 20px;
+	line-height:50px;
+}
+.author{
+
+	color:#C0C0C0;
+	line-height:2em;
+}
+.suojin{
+	text-indent: 2em;
+}
+.song{
+	padding:15px;
+}
+.image span{ 
+	vertical-align: middle;
+}
+.image{
+	border:1px solid #272525;
+	margin:20px 0 0 60px;
+	text-align:center;
+	padding:7.5px 24px;
+	display:inline-block;
+	}
+.image img{
+	display:block; 
+	margin-top:5px; 
+	width:100px; 
+	height:100px;
+}
+ol{
+	margin-left: 30px;
+}
+table{
+		width:100%;
+		height:70px;
+}
+table th{
+		background-color:black;
+		color: #FFF;
+}
+/*.line th
+	{
+		color: white;
+	}*/
+#form
+{
+	margin-top: 15px;
+	font-size:12px;
+	overflow: hidden;
+}
+#form div
+{
+	margin-bottom: 20px;
+}
+#form label
+{
+	font-size: 13px;
+	display:inline-block;
+	width:104px;
+	text-align: right;
+}
+#form>div.pwd>input:nth-of-type(2)
+{
+	margin-bottom: 8px;
+}
+#form>div.desc>#desc{
+	margin-left: 109px;
+}
+#form>div.desc>label
+{
+	vertical-align: top;
+}
+#form>div.email input,#form1>div.pwd input
+{
+	width:120px;
+}
+#form span
+{
+	 display: inline-block;
+	 margin-left: 109px;
+	 color:#87939F;
+}
+#btn
+{
+	width:100%;
+	background: #3355D0;
+	border:0;
+	color:#fff;
+	font-size:16px;
+	padding:10px 0;
+	border-radius: 10px;
+}
+
+</style>
+</head>
+<body>
+<!-- <div id="warp"> -->
+	<div id="header">
+		<div class="list1">
+			<!-- <img src="images/bd_logo.jpg" class="logo" width="100" height="100"/> -->
+			<img src="images/baidu.png"  width="50" height="50"/>
+			<ul>	
+				<li><a href="http://www.w3school.com.cn/html/html_links.asp">HTML</a></li>
+				<li><a href="https://www.baidu.com/">百度</a></li>
+				<li><a href="http://weibo.com/">微博</a></li>
+			</ul>
+		</div>
+		
+	</div>
+	<div id="main">
+		<div class="left">
+			<div class="article">
+				<h2>正文的一级标题HTML的练习</h2>
+				<!-- <hr> -->
+				<h3>二级标题</h3>
+				<div class="author">
+				<p>作者：花果山的小蝼蚁 时间：2017-02-27</p>
+				</div>
+				<div class="suojin">
+				<p>以前的花果山就只是花果山，各种动物，一片森林，一个生态系统，但是自从孙悟空走红，这里边就再不得安宁，一人得道，鸡犬升天，现在猴子们趾高气昂，对我们这些别的动物颐指气使，还是怀念从前</p>
+				<img src="images/test.jpg" width="300" height="300" />
+				<p>这其实是一段废话，作用就是为了测试一些换行的功能，看一下或不会换行换行晃晃刚吃过第三次速度与付出更多生育高峰的一场孤独刷卡成功横超过五月份个人衣服段内环护航段内换行<br>继续这段其实并没有结束只是换行了而已还需要再测试一下在段内插入连接<a href="http://ife.baidu.com/course/all">点击链接会进入百度前端学院所有课程</a>继续这个段落，快结束吧，想试的差不多试完了</p>
+				</div>
+			</div>
+			<div class="article">
+				<h2>下一篇文章的一级标题写什么好呢</h2>
+				<h3>勋章</h3>
+				<div class="author">
+				<p>鹿晗的歌
+				时间：2017-2-27</p>
+				</div>
+				<div class="song">
+				<p>故事开始在最初的那个梦中<br>
+					满天星光只因我而闪烁<br>
+					我看到平凡的我也会<br>
+					有一刻不普通<br>
+					前方是未知<br>
+					迎面是海风<br>
+					塞壬的歌会诱人忘记初衷<br>
+					他们说每一个风浪<br>
+					都能够淹没我<br>
+					可我会像奥德休斯一样<br>
+					朝着心中的方向<br>
+					哪怕众神会在彼岸阻挡<br>
+					当我需要独自站在<br>
+					远方的沙场<br>
+					武器就是我紧握的梦想<br>
+					而我受过的伤<br>
+					都是我的勋章<br>
+				</p>
+				</div>
+				<img src="images/lh.jpg" width="300" height="300"/>
+				<ul>
+					<li>牛奶咖啡</li>
+					<li>五月天</li>
+					<li>苏打绿</li>
+					<li>苏丹红</li>
+				</ul>
+			</div>
+			<div class="article">
+				<h2>图片</h2>
+				<div class="image">
+				<span>张钧甯</span>
+				<img src="images/zjn.jpg" />
+				</div>
+				<div class="image">
+				<span>孙俪</span>
+				<img src="images/sl.jpg" />
+				</div>
+				<div class="image">
+				<span>鹿晗</span>
+				<img src="images/lh.jpg" />
+				</div>
+				<div class="image">
+				<span>孙俪</span>
+				<img src="images/sl.jpg" />
+				</div>
+				<div class="image">
+				<span>鹿晗</span>
+				<img src="images/lh.jpg" />
+				</div>
+				<div class="image">
+				<span>孙俪</span>
+				<img src="images/sl.jpg" />
+				</div>
+				<div class="image">
+				<span>鹿晗</span>
+				<img src="images/lh.jpg" />
+				</div>
+				<div class="image">
+				<span>孙俪</span>
+				<img src="images/sl.jpg" />
+				</div>
+				<div class="image">
+				<span>鹿晗</span>
+				<img src="images/lh.jpg" />
+				</div>
+				<div class="image">
+				<span>孙俪</span>
+				<img src="images/sl.jpg" />
+				</div>
+			</div>
+			<div class="article">
+				<h2>最后一篇文章</h2>
+				<ol>
+		  			<li>咖啡</li>
+		  			<li>牛奶</li>
+		  			<li>茶</li>
+				</ol>
+				<p>课程表</p>
+				<table border="1">
+					<tr >
+					<th>&nbsp;</th>
+					<th>星期一</th>
+					<th>星期二</th>
+					<th>星期三</th>
+					<th>星期四</th>
+					<th>星期五</th>
+					</tr>
+					<tr>
+					<td>上午</td>
+		  			<td>语文</td>
+		  			<td>数学</td>
+		  			<td>英语</td>
+		  			<td>政治</td>
+		  			<td>历史</td>
+					</tr> 
+					<tr>
+					<td>下午</td>
+		  			<td>语文</td>
+		  			<td>数学</td>
+		  			<td>英语</td>
+		  			<td>政治</td>
+		  			<td>历史</td>
+					</tr>  
+					</table>
+			</div>
+		</div>
+		<div class="right">
+			<div class="article">
+				<h3>这里以后是一个侧栏，这是侧栏的标题</h3>
+				<form  id="form">
+					<div class="email">
+						<label for="email">请输入邮箱地址:</label>
+						<input type="email" id="email"><br>
+						<span>邮箱地址请按要求格式输入</span>
+					</div>
+					<div class="pwd">
+						<label for="pwd">请输入密码:</label>
+						<input type="password" id="pwd"><br>
+						<label for="repwd">请重复输入密码:</label>
+						<input type="password" id="repwd"><br>
+						<span>密码请为6~16位英文数字</span>
+					</div>
+					<div class="gender">
+						<label for="gender">性别:</label>
+						<input type="radio" value="male" name="gender">男
+						<input type="radio" value="female" name="gender">女
+					</div>
+					<div class="city">
+						<label for="city">城市:</label>
+						<select name="city" id="city">
+							<option value="BJ">北京</option>
+							<option value="SH">上海</option>
+							<option value="SZ">深圳</option>
+						</select>
+					</div>
+					<div class="hobby">
+						<label for="hobby">爱好:</label>
+						<input type="checkbox" value="sports">运动
+						<input type="checkbox" value="art">艺术
+						<input type="checkbox" value="science">科学
+					</div>
+					<div class="desc">
+						<label for="desc">个人描述:</label>
+						<textarea id="desc" rows="6" cols="25"placeholder="输入你的个人描述"></textarea>
+					</div>
+				</form>
+				<button id="btn">确认提交</button>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		Copyright©Chloe
+	</div>
+<!-- </div> -->
+</body>
+</html>
